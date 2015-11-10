@@ -12,11 +12,31 @@ http://marko.euptera.com/
 Personal web site, blog, etc, ...
 </description>
 <lastBuildDate>
-Tue, 03 Nov 2015 10:57:37 +0100
+Tue, 10 Nov 2015 18:26:58 +0100
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
+<item>
+<guid>
+http://marko.euptera.com/posts/2015-11-10-jes-eur.html
+</guid>
+<link>
+http://marko.euptera.com/posts/2015-11-10-jes-eur.html
+</link>
+<title>
+Jes EÜR
+</title>
+<description>
+&lt;h2&gt;&lt;a name=&quot;freelancing&amp;#95;requirements&amp;#95;in&amp;#95;germany&quot;&gt;&lt;/a&gt;Freelancing requirements in Germany&lt;/h2&gt;&lt;p&gt;Being freelancer in Germany is not so simple as being freelancer in other parts of the world. It can be very complicated, especially for a beginner.&lt;/p&gt;&lt;p&gt;It is not enough to just start working, and worry later about taxes, registration and other legalities. No, you first need to register yourself with the tax office. Then you need to make clear are you &lt;em&gt;Selbständig&lt;/em&gt; or &lt;em&gt;Freiberufler&lt;/em&gt;. While both can be translated as &lt;em&gt;freelancer&lt;/em&gt;, the obligation, legal requirements and bookkeeping differs.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;anlage&amp;#95;eür&quot;&gt;&lt;/a&gt;Anlage EÜR&lt;/h2&gt;&lt;p&gt;Although freelancers are not required to do full double entry accounting, like &lt;strong&gt;GMBH&lt;/strong&gt; or &lt;strong&gt;UG&lt;/strong&gt;, they are required to report their earnings at the end of the year in a consolidated way, by submitting the so called &lt;strong&gt;Anlage-EÜR&lt;/strong&gt; to the tax office. Being Freiberufler, one is theoretically not required to fill in the form, but I heard all kind of stories that tax people don't like it when you make it more complicated to them, and not submitting Anlage-EÜR electronically is definitelly more work for them.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;jes-eür&quot;&gt;&lt;/a&gt;Jes-EÜR&lt;/h2&gt;&lt;p&gt;There are a lot of programs that allows one to do bookkeeping, most of them commercial, with varying quality and pricing. Working primarily on Linux, and not even owning a Windows machine, makes the choice much worse. Only a few of commercially available software support non-Windows platforms, and non-windows usually means Mac.&lt;/p&gt;&lt;p&gt;There are a couple of online software packages, but they always seemed a bit limited compared to the full desktop version. And I don't like subscription model where I lose all data and convenience when I decide to stop paying for the service.&lt;/p&gt;&lt;p&gt;Then I came around the &lt;a href='http://jes-eur.de/'&gt;Jes-Eür&lt;/a&gt;. It's a nice Java based cross platform program that allows to track income and expenses, categorize them in the standard categories, and provide a report that can be used to submit Anlage-EÜR. Granted, it is missing an option to automatically submit it to the tax office, but it provides printout with explanation that would make filling in the form on the official tax department web site a two minutes of effor. I even like it more that way, since it gives an impression of the control during the process.&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Tue, 10 Nov 2015 00:00:00 +0100
+</pubDate>
+</item>
 <item>
 <guid>
 http://marko.euptera.com/posts/2015-11-03-morning.html
