@@ -12,7 +12,7 @@ http://marko.euptera.com/
 Personal web site, blog, etc, ...
 </description>
 <lastBuildDate>
-Wed, 20 Jan 2016 14:15:03 +0100
+Thu, 21 Jan 2016 21:52:46 +0100
 </lastBuildDate>
 <generator>
 clj-rss
@@ -28,7 +28,7 @@ http://marko.euptera.com/posts/2016-01-04-umatrix.html
 uMatrix and uBlock
 </title>
 <description>
-&lt;h3&gt;&lt;a name=&quot;umatrix&amp;#95;and&amp;#95;ublock&amp;#95;origin&quot;&gt;&lt;/a&gt;uMatrix and uBlock Origin&lt;/h3&gt;&lt;p&gt;Since a few months I started using &lt;strong&gt;uBlock Origin&lt;/strong&gt; as a privacy plugin for Firefox. Although it works good, after some time it start to be annoying having to constantly tweak it. It's ok that it tries to be user friendly, but sometimes I just feel like too much tweaking is required to get a balance between privacy and having non-broken web browsing experience.&lt;/p&gt;&lt;p&gt;Then, I came across a new Firefox plugin by the same author as uBlock. It's called &lt;a href='https://addons.mozilla.org/en-US/firefox/addon/umatrix/'&gt;uMatrix&lt;/a&gt;. It allows for a nice matrix like UI to define the blocking and allow rules. It has sensible defaults, which provide nice tradeofs out of the box with minimal tweaking.&lt;/p&gt;&lt;p&gt;Right now, I'm using &lt;strong&gt;uMatrix&lt;/strong&gt; as my only ad blocker and tracker blocker tool on all my browsers. If you havent't tried it, just give it a go, you may never look back.&lt;/p&gt;
+&lt;h3&gt;&lt;a name=&quot;umatrix&amp;#95;and&amp;#95;ublock&amp;#95;origin&quot;&gt;&lt;/a&gt;uMatrix and uBlock Origin&lt;/h3&gt;&lt;p&gt;Since a few months I started using &lt;strong&gt;uBlock Origin&lt;/strong&gt; as a privacy plugin for Firefox. Although it works good, after some time it start to be annoying having to constantly tweak it. It's ok that it tries to be user friendly, but sometimes I just feel like too much tweaking is required to get a balance between privacy and having non-broken web browsing experience.&lt;/p&gt;&lt;p&gt;Then, I came across a new Firefox plugin by the same author as uBlock. It's called &lt;a href='https://addons.mozilla.org/en-US/firefox/addon/umatrix/'&gt;uMatrix&lt;/a&gt;. It allows for a nice matrix like UI to define the blocking and allow rules. It has sensible defaults, which provide nice tradeofs out of the box with minimal tweaking.&lt;/p&gt;&lt;p&gt;Right now, I'm using &lt;strong&gt;uMatrix&lt;/strong&gt; as my only ad blocker and tracker blocker tool on all my browsers. If you haven't tried it, just give it a go, you may never look back.&lt;/p&gt;&lt;p&gt;The only drawback is that it doesn't work on the Firefox version for Android, at least not yet.&lt;/p&gt;
 </description>
 <enclosure>
 
