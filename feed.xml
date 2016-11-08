@@ -12,7 +12,7 @@ http://marko.euptera.com/
 Personal web site, blog, etc, ...
 </description>
 <lastBuildDate>
-Thu, 20 Oct 2016 16:59:25 +0200
+Tue, 08 Nov 2016 09:48:12 +0100
 </lastBuildDate>
 <generator>
 clj-rss
@@ -88,7 +88,13 @@ http://marko.euptera.com/posts/2015-10-29-improved-privacy.html
 Quickly improve web browsing privacy
 </title>
 <description>
-&lt;p&gt;While browsing Hacker News &lt;a href='https://news.ycombinator.com/item?id=10470535'&gt;thread&lt;/a&gt; just got to this small tip for improving web browsing privacy.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; I use Firefox and install the following: &lt;ul&gt;&lt;li&gt;Disconnect&lt;/li&gt;&lt;li&gt;Ublock Origin (choose 3rd-Party block lists to suit.)&lt;/li&gt;&lt;li&gt;Privacy Badger (no set up, just install, it learns as you go)&lt;/li&gt;&lt;/ul&gt;In Firefox, use about:config to change the following: &lt;ul&gt;&lt;li&gt;Toggle dom.storage.enabled to False&lt;/li&gt;&lt;li&gt;Toggle layout.css.visited&lt;i&gt;links&lt;/i&gt;enabled to False&lt;/li&gt;&lt;li&gt;Toggle media.peerconnection.enabled to False&lt;/li&gt;&lt;li&gt;Toggle network.prefetch-next to False&lt;/li&gt;&lt;li&gt;Toggle network.http.sendReferrerHeader to 0 (zero)&lt;/li&gt;&lt;li&gt;Toggle network.http.sendSecureXSiteReferrer to False&lt;/li&gt;&lt;/ul&gt;These settings have worked for me with no issues. I bank, do all manner of things online with no issues. I do, however, see no ads, no tracking, faster page loads, clean experience all around. &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Not sure if it would be too paranoid, but there's no real drawbacks trying it. While the advice is about Firefox, I'm sure something similar could be achieved with Chrome, at least to some extent.&lt;/p&gt;
+&lt;p&gt;While browsing Hacker News &lt;a href='https://news.ycombinator.com/item?id=10470535'&gt;thread&lt;/a&gt; just got to this small tip for improving web browsing privacy.&lt;/p&gt;&lt;p&gt;I use Firefox and install the following:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Disconnect&lt;/li&gt;&lt;li&gt;Ublock Origin (choose 3rd-Party block lists to suit.)&lt;/li&gt;&lt;li&gt;Privacy Badger (no set up, just install, it learns as you go)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;In Firefox, use about:config to change the following:&lt;pre&gt;&lt;code&gt;- Toggle dom.storage.enabled to False
+- Toggle layout.css.visited&amp;#95;links&amp;#95;enabled to False
+- Toggle media.peerconnection.enabled to False
+- Toggle network.prefetch-next to False
+- Toggle network.http.sendReferrerHeader to 0 &amp;#40;zero&amp;#41;
+- Toggle network.http.sendSecureXSiteReferrer to False
+ &lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;&lt;p&gt;These settings have worked for me with no issues. I bank, do all manner of things online with no issues. I do, however, see no ads, no tracking, faster page loads, clean experience all around.&lt;/p&gt;&lt;p&gt;Not sure if it would be too paranoid, but there's no real drawbacks trying it. While the advice is about Firefox, I'm sure something similar could be achieved with Chrome, at least to some extent.&lt;/p&gt;
 </description>
 <enclosure>
 
