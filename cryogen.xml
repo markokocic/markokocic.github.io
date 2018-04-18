@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
 <channel>
-<atom:link href='http://marko.euptera.com/' rel='self' type='application/rss+xml'/>
+<atom:link href='https://marko.euptera.com/' rel='self' type='application/rss+xml'/>
 <title>
 Marko Kocić Blog
 </title>
 <link>
-http://marko.euptera.com/
+https://marko.euptera.com/
 </link>
 <description>
 Personal web site, blog, etc, ...
 </description>
 <lastBuildDate>
-Wed, 14 Feb 2018 09:00:15 +0100
+Wed, 18 Apr 2018 13:45:14 +0200
 </lastBuildDate>
 <generator>
 clj-rss

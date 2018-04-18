@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
 <channel>
-<atom:link href='http://marko.euptera.com/' rel='self' type='application/rss+xml'/>
+<atom:link href='https://marko.euptera.com/' rel='self' type='application/rss+xml'/>
 <title>
 Marko Kocić Blog
 </title>
 <link>
-http://marko.euptera.com/
+https://marko.euptera.com/
 </link>
 <description>
 Personal web site, blog, etc, ...
 </description>
 <lastBuildDate>
-Wed, 14 Feb 2018 09:00:15 +0100
+Wed, 18 Apr 2018 13:45:14 +0200
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
 <item>
 <guid>
-http://marko.euptera.com/posts/2016-11-22-sticky-folders-on-linux.html
+https://marko.euptera.com/posts/2016-11-22-sticky-folders-on-linux.html
 </guid>
 <link>
-http://marko.euptera.com/posts/2016-11-22-sticky-folders-on-linux.html
+https://marko.euptera.com/posts/2016-11-22-sticky-folders-on-linux.html
 </link>
 <title>
 Sticky folders on Linux
@@ -46,10 +46,10 @@ Tue, 22 Nov 2016 00:00:00 +0100
 </item>
 <item>
 <guid>
-http://marko.euptera.com/posts/2016-01-04-umatrix.html
+https://marko.euptera.com/posts/2016-01-04-umatrix.html
 </guid>
 <link>
-http://marko.euptera.com/posts/2016-01-04-umatrix.html
+https://marko.euptera.com/posts/2016-01-04-umatrix.html
 </link>
 <title>
 uMatrix and uBlock
@@ -63,10 +63,10 @@ Mon, 04 Jan 2016 00:00:00 +0100
 </item>
 <item>
 <guid>
-http://marko.euptera.com/posts/2015-11-10-jes-eur.html
+https://marko.euptera.com/posts/2015-11-10-jes-eur.html
 </guid>
 <link>
-http://marko.euptera.com/posts/2015-11-10-jes-eur.html
+https://marko.euptera.com/posts/2015-11-10-jes-eur.html
 </link>
 <title>
 Jes EÜR
@@ -80,10 +80,10 @@ Tue, 10 Nov 2015 00:00:00 +0100
 </item>
 <item>
 <guid>
-http://marko.euptera.com/posts/2015-11-03-morning.html
+https://marko.euptera.com/posts/2015-11-03-morning.html
 </guid>
 <link>
-http://marko.euptera.com/posts/2015-11-03-morning.html
+https://marko.euptera.com/posts/2015-11-03-morning.html
 </link>
 <title>
 Week day morning
@@ -97,10 +97,10 @@ Tue, 03 Nov 2015 00:00:00 +0100
 </item>
 <item>
 <guid>
-http://marko.euptera.com/posts/2015-10-29-improved-privacy.html
+https://marko.euptera.com/posts/2015-10-29-improved-privacy.html
 </guid>
 <link>
-http://marko.euptera.com/posts/2015-10-29-improved-privacy.html
+https://marko.euptera.com/posts/2015-10-29-improved-privacy.html
 </link>
 <title>
 Quickly improve web browsing privacy
@@ -120,10 +120,10 @@ Thu, 29 Oct 2015 00:00:00 +0100
 </item>
 <item>
 <guid>
-http://marko.euptera.com/posts/2015-10-02-markdown-vs-asciidoc.html
+https://marko.euptera.com/posts/2015-10-02-markdown-vs-asciidoc.html
 </guid>
 <link>
-http://marko.euptera.com/posts/2015-10-02-markdown-vs-asciidoc.html
+https://marko.euptera.com/posts/2015-10-02-markdown-vs-asciidoc.html
 </link>
 <title>
 Markdown vs Asciidoc
@@ -137,10 +137,10 @@ Fri, 02 Oct 2015 00:00:00 +0200
 </item>
 <item>
 <guid>
-http://marko.euptera.com/posts/2015-10-01-first-post.html
+https://marko.euptera.com/posts/2015-10-01-first-post.html
 </guid>
 <link>
-http://marko.euptera.com/posts/2015-10-01-first-post.html
+https://marko.euptera.com/posts/2015-10-01-first-post.html
 </link>
 <title>
 First Post
