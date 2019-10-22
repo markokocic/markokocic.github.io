@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link href="https://marko.euptera.com/" rel="self" type="application/rss+xml"/><title>Marko Kocić Blog</title><link>https://marko.euptera.com/</link><description>Personal web site, blog, etc, ...</description><lastBuildDate>Tue, 22 Oct 2019 14:25:34 +0200</lastBuildDate><generator>clj-rss</generator><item><guid>https://marko.euptera.com/posts/2019-10-22-Add-Root-Certificate-to-Java-Keystore.html</guid><link>https://marko.euptera.com/posts/2019-10-22-Add-Root-Certificate-to-Java-Keystore.html</link><title>Add Root Certificate to Java Keystore</title><description>&lt;div class="sect2"&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link href="https://marko.euptera.com/" rel="self" type="application/rss+xml"/><title>Marko Kocić Blog</title><link>https://marko.euptera.com/</link><description>Personal web site, blog, etc, ...</description><lastBuildDate>Tue, 22 Oct 2019 14:28:40 +0200</lastBuildDate><generator>clj-rss</generator><item><guid>https://marko.euptera.com/posts/2019-10-22-Add-Root-Certificate-to-Java-Keystore.html</guid><link>https://marko.euptera.com/posts/2019-10-22-Add-Root-Certificate-to-Java-Keystore.html</link><title>Add Root Certificate to Java Keystore</title><description>&lt;div class="sect2"&gt;
 &lt;h3 id="_ssl_certificates"&gt;SSL Certificates&lt;/h3&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;It certainly happened to you that you want to use your Java based application to connect to some https resource which doesn&amp;#8217;t have a valid or trusted certificate. While https and SSL certeficates are used to make sure that the site you connect to is trusted, sometimes you may want to override that settings and proclaim that the site with the given (self signed, invalid, &amp;#8230;&amp;#8203;) certificate is secure.&lt;/p&gt;
@@ -31,7 +31,7 @@
 &lt;/div&gt;
 &lt;div class="listingblock"&gt;
 &lt;div class="content"&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass changeit -alias cert1_alias -import -file exported_cert.cer&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass changeit -alias cert1_alias -file exported_cert.cer&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
