@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link href="https://marko.euptera.com/" rel="self" type="application/rss+xml"/><title>Marko Kocić Blog</title><link>https://marko.euptera.com/</link><description>Personal web site, blog, etc, ...</description><lastBuildDate>Tue, 22 Oct 2019 14:18:22 +0200</lastBuildDate><generator>clj-rss</generator><item><guid>https://marko.euptera.com/posts/2019-10-22-Add-Root-Certificate-to-Java-Keystore.html</guid><link>https://marko.euptera.com/posts/2019-10-22-Add-Root-Certificate-to-Java-Keystore.html</link><title>Add Root Certificate to Java Keystore</title><description>&lt;div class="sect2"&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><atom:link href="https://marko.euptera.com/" rel="self" type="application/rss+xml"/><title>Marko Kocić Blog</title><link>https://marko.euptera.com/</link><description>Personal web site, blog, etc, ...</description><lastBuildDate>Tue, 22 Oct 2019 14:25:34 +0200</lastBuildDate><generator>clj-rss</generator><item><guid>https://marko.euptera.com/posts/2019-10-22-Add-Root-Certificate-to-Java-Keystore.html</guid><link>https://marko.euptera.com/posts/2019-10-22-Add-Root-Certificate-to-Java-Keystore.html</link><title>Add Root Certificate to Java Keystore</title><description>&lt;div class="sect2"&gt;
 &lt;h3 id="_ssl_certificates"&gt;SSL Certificates&lt;/h3&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;It certainly happened to you that you want to use your Java based application to connect to some https resource which doesn&amp;#8217;t have a valid or trusted certificate. While https and SSL certeficates are used to make sure that the site you connect to is trusted, sometimes you may want to override that settings and proclaim that the site with the given (self signed, invalid, &amp;#8230;&amp;#8203;) certificate is secure.&lt;/p&gt;
@@ -25,6 +25,17 @@
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;From then on your Java program that uses given truststore will trust all certificates that you imported.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;BTW, if your application doesn&amp;#8217;t explicitly use it&amp;#8217;s own trust store, you can add your trusted certificate to the default Java CA store in a similar way.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass changeit -alias cert1_alias -import -file exported_cert.cer&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;But be careful. This will make the certificate trusted to all application using given Java runtime environmtent, and this may not be what you want to do.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description><pubDate>Tue, 22 Oct 2019 00:00:00 +0200</pubDate></item><item><guid>https://marko.euptera.com/posts/2016-11-22-sticky-folders-on-linux.html</guid><link>https://marko.euptera.com/posts/2016-11-22-sticky-folders-on-linux.html</link><title>Sticky folders on Linux</title><description>&lt;h3 id="sticky&amp;#95;folders&amp;#95;on&amp;#95;linux"&gt;Sticky folders on Linux&lt;/h3&gt;&lt;p&gt;Every once in a while when developing something on Linux, I am facing the similar issues. The question is how to ensure that all files in a directory, regardless of who is creating them, are accessible by multiple users.&lt;/p&gt;&lt;p&gt;Obvious solution is to just assigne ownership of the files to some group, and give permissions to that group. Then, all users that are members of that group can access them.&lt;/p&gt;&lt;p&gt;This works fine, until one of the users create a new file, or a new directory. In that case, he is the owner of that one file or disectory, and access by other users dependens on his default settings. Obviously, root can fix that by running chown and changing ownership again, but that's manual process.&lt;/p&gt;&lt;p&gt;Luckily, since we are running Linux, the solution exists:&lt;/p&gt;&lt;pre&gt;&lt;code&gt;# First change ownership of the current directory
 chown -R user&amp;#95;1:group&amp;#95;1 ./somedir
