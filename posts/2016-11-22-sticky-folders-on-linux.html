@@ -60,8 +60,8 @@
 </div>
 <div>
     
-    <h3 id="sticky&#95;folders&#95;on&#95;linux">Sticky folders on Linux</h3><p>Every once in a while when developing something on Linux, I am facing the similar issues. The question is how to ensure that all files in a directory, regardless of who is creating them, are accessible by multiple users.</p><p>Obvious solution is to just assign ownership of the files to some group, and give permissions to that group. Then, all users that are members of that group can access them.</p><p>This works fine, until one of the users creates a new file, or a new directory. In that case, he is the owner of that one file or directory, and access by other users depend on his default settings. Obviously, root can fix that by running chown and changing ownership again, but that's a manual process.</p><p>Luckily, since we are running Linux, the solution exists:</p><pre><code># First change ownership of the current directory
-chown -R user&#95;1:group&#95;1 ./somedir
+    <h3 id="sticky_folders_on_linux">Sticky folders on Linux</h3><p>Every once in a while when developing something on Linux, I am facing the similar issues. The question is how to ensure that all files in a directory, regardless of who is creating them, are accessible by multiple users.</p><p>Obvious solution is to just assign ownership of the files to some group, and give permissions to that group. Then, all users that are members of that group can access them.</p><p>This works fine, until one of the users creates a new file, or a new directory. In that case, he is the owner of that one file or directory, and access by other users depend on his default settings. Obviously, root can fix that by running chown and changing ownership again, but that's a manual process.</p><p>Luckily, since we are running Linux, the solution exists:</p><pre><code># First change ownership of the current directory
+chown -R user_1:group_1 ./somedir
 
 # Set file ACL for the directory
 setfacl -Rdm u::rwx,g::rwx ./somedir
@@ -69,7 +69,7 @@ setfacl -Rdm u::rwx,g::rwx ./somedir
 find ./somedir -type f -exec chmod 660 {} + -o -type d -exec chmod 2770 {} +
 
 # All executable should also be executable by all group members
-find ./somedir -name &quot;&#42;.sh&quot; -exec chmod 770 {} +
+find ./somedir -name "*.sh" -exec chmod 770 {} +
 </code></pre><p>And that's basically it.</p><p>One of the common use cases would be when we have multiple users working on the same application. Then we can create a group and user for the project, set the ownership to the project directory to that group, and add all project members to the group. Then, they all can access the files there, as well as the application user running the application, without danger that they will create a file that application user doesn't have permission to read.</p>
 </div>
 
@@ -170,7 +170,7 @@ find ./somedir -name &quot;&#42;.sh&quot; -exec chmod 770 {} +
       </div>
     </div>
   </div>
-  <footer>Copyright &copy; 2019 Marko Kocić
+  <footer>Copyright &copy; 2020 Marko Kocić
     <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
 </div>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
