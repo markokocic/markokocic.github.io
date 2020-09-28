@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8"/>
     <title>Marko Kocić Blog</title>
+    
+    <meta name="description" content="Personal web site, blog, etc, ...">
+    <meta name="keywords" content="">
+    
+    <link rel="canonical" href="https://marko.euptera.com/index.html">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-Control" value="max-age=900">
-    <link href='//fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet'
-          type='text/css'>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,400italic">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-3.3.0.min.css">
+    <link href="/css/font-awesome-4.2.0.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/highlight-9.7.0.default.min.css">
     <link href="/css/screen.css" rel="stylesheet" type="text/css" />
   </head>
 <body>
@@ -60,8 +62,8 @@
 </div>
 <div>
     
-    <h3 id="ssl_certificates">SSL Certificates</h3><p>It certainly happened to you that you want to use your Java-based application to connect to some https resource which doesn't have a valid or trusted certificate. While https and SSL certificates are used to make sure that the site you connect to is trusted, sometimes you may want to override that settings and proclaim that the site with the given (self signed, invalid, ...) certificate is secure.</p><p>This can be done quite easy by adding that certificate to the Java certificate trust store.</p><p>All you need is a keytool command that comes with the Java Development Kit and the certificate.</p><p>The easiest way to get the actual certificate is to open the https url in your browser and export certificate from there into the cert1.cer file.</p><p>Then all you need is to execute the following command:</p><pre><code>keytool -import -trustcacerts -keystore keystore1.p12 -alias cert1_alias -file exported_cert.cer
-</code></pre><p>And that's basically it. The keytool will ask you for the keystore password and confirmation if you are sure what you are doing.</p><p>From then on your Java program that uses given truststore will trust all certificates that you imported.</p><p>BTW, if your application doesn't explicitly use it's own trust store, you can add your trusted certificate to the default Java CA store in a similar way.</p><pre><code>keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass changeit -alias cert1_alias -file exported_cert.cer
+    <h3 id="ssl-certificates">SSL Certificates</h3><p>It certainly happened to you that you want to use your Java-based application to connect to some https resource which doesn't have a valid or trusted certificate. While https and SSL certificates are used to make sure that the site you connect to is trusted, sometimes you may want to override that settings and proclaim that the site with the given (self signed, invalid, ...) certificate is secure.</p><p>This can be done quite easy by adding that certificate to the Java certificate trust store.</p><p>All you need is a keytool command that comes with the Java Development Kit and the certificate.</p><p>The easiest way to get the actual certificate is to open the https url in your browser and export certificate from there into the cert1.cer file.</p><p>Then all you need is to execute the following command:</p><pre><code class="bash">keytool -import -trustcacerts -keystore keystore1.p12 -alias cert1_alias -file exported_cert.cer
+</code></pre><p>And that's basically it. The keytool will ask you for the keystore password and confirmation if you are sure what you are doing.</p><p>From then on your Java program that uses given truststore will trust all certificates that you imported.</p><p>BTW, if your application doesn't explicitly use it's own trust store, you can add your trusted certificate to the default Java CA store in a similar way.</p><pre><code class="bash">keytool -import -trustcacerts -keystore $JAVA_HOME/jre/lib/security/cacerts -storepass changeit -alias cert1_alias -file exported_cert.cer
 </code></pre><p>But be careful. This will make the certificate trusted to all application using given Java runtime environment, and this may not be what you want to do.</p>
 </div>
 
@@ -165,9 +167,9 @@
   <footer>Copyright &copy; 2020 Marko Kocić
     <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
 </div>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="/js/highlight.pack.js" type="text/javascript"></script>
+<script src="/js/jquery-1.11.0.min.js"></script>
+<script src="/js/bootstrap-3.3.0.min.js"></script>
+<script src="/js/highlight.pack.js" type="application/javascript"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
   // Googly Analytics
